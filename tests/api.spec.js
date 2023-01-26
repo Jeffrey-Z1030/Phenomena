@@ -1,6 +1,6 @@
 require('dotenv').config();
 const axios = require('axios');
-const { SERVER_ADDRESS = 'http://localhost:', PORT = 3000 } = process.env;
+const { SERVER_ADDRESS = 'http://localhost:', PORT = 8080 } = process.env;
 const API_URL = process.env.API_URL || SERVER_ADDRESS + PORT;
 
 const { rebuildDB } = require('../db/seed_data');
